@@ -14,7 +14,7 @@
     - 'Один из последних просмотренных фильмов?'
     - 'На сколько оцените его?'
 Ответы стоит поместить в отдельные переменные
-Записать ответы в объект movies в формате: 
+Записать ответы в объект movies в формате:
     movies: {
         'logan': '8.1'
     }
@@ -23,3 +23,22 @@
 
 'use strict';
 
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+
+const personalMovieDB = {
+  count: numberOfFilms,
+  movies: {},
+  actors: {},
+  genres: [],
+  privat: false
+};
+
+const q11 = prompt('Один из последних просмотренных фильмов?', '');
+const q12 = +prompt('На сколько оцените его?', '');
+const q21 = prompt('Один из последних просмотренных фильмов?', '');
+const q22 = +prompt('На сколько оцените его?', '');
+
+personalMovieDB.movies[q11] = q12;
+personalMovieDB.movies[q21] = q22;
+
+console.log(personalMovieDB);
