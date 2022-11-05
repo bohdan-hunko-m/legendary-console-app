@@ -1,0 +1,6 @@
+#Folder with modules
+node_modules
+#Folder with makets and other files
+materials
+#Output folder
+dist
